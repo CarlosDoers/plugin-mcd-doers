@@ -3,7 +3,7 @@
  * Plugin Name: Doers AI Connector
  * Plugin URI: https://doersdf.com
  * Description: Conecta tu WordPress a asistentes de IA (Claude y otros clientes MCP). Registra abilities de desarrollo y gestión de contenido y las expone como servidor MCP propio mediante el MCP Adapter oficial.
- * Version: 0.7.0
+ * Version: 0.9.0
  * Requires at least: 6.9
  * Requires PHP: 7.4
  * Author: Doers
@@ -18,19 +18,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'DOERS_AI_VERSION', '0.7.0' );
+define( 'DOERS_AI_VERSION', '0.9.0' );
 define( 'DOERS_AI_DIR', plugin_dir_path( __FILE__ ) );
 define( 'DOERS_AI_SERVER_ID', 'doers-ai' );
 
 require_once DOERS_AI_DIR . 'includes/class-doers-settings.php';
 require_once DOERS_AI_DIR . 'includes/class-doers-audit.php';
-require_once DOERS_AI_DIR . 'includes/class-doers-context.php';
-require_once DOERS_AI_DIR . 'includes/class-doers-claudemd.php';
-require_once DOERS_AI_DIR . 'includes/class-doers-files.php';
+require_once DOERS_AI_DIR . 'includes/class-doers-blocks.php';
 require_once DOERS_AI_DIR . 'includes/class-doers-content.php';
-require_once DOERS_AI_DIR . 'includes/class-doers-manage.php';
 require_once DOERS_AI_DIR . 'includes/class-doers-media.php';
-require_once DOERS_AI_DIR . 'includes/class-doers-templates.php';
 require_once DOERS_AI_DIR . 'includes/class-doers-abilities.php';
 require_once DOERS_AI_DIR . 'includes/class-doers-oauth.php';
 require_once DOERS_AI_DIR . 'includes/class-doers-admin.php';

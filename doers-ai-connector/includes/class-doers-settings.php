@@ -23,13 +23,8 @@ class Doers_Settings {
 	 */
 	public static function groups() {
 		return array(
-			'context'  => 'Contexto del proyecto (diseño y documentación)',
-			'content'  => 'Contenido (páginas y entradas)',
-			'files'    => 'Archivos de tema',
-			'themes'   => 'Temas y plantillas FSE',
-			'plugins'  => 'Plugins',
-			'media'    => 'Medios',
-			'settings' => 'Ajustes del sitio',
+			'content' => 'Contenido y bloques (páginas y entradas)',
+			'media'   => 'Medios',
 		);
 	}
 
@@ -45,7 +40,6 @@ class Doers_Settings {
 			'rate_limit'    => 100,
 			'audit_max'     => 200,
 			'oauth_enabled' => true,
-			'claudemd_auto' => true,
 		);
 		$saved = get_option( self::OPTION, array() );
 		if ( ! is_array( $saved ) ) {
