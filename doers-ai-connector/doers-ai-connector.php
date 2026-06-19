@@ -3,7 +3,7 @@
  * Plugin Name: Doers AI Connector
  * Plugin URI: https://doersdf.com
  * Description: Conecta tu WordPress a asistentes de IA (Claude y otros clientes MCP). Registra abilities de desarrollo y gestión de contenido y las expone como servidor MCP propio mediante el MCP Adapter oficial.
- * Version: 0.9.0
+ * Version: 0.9.1
  * Requires at least: 6.9
  * Requires PHP: 7.4
  * Author: Doers
@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'DOERS_AI_VERSION', '0.9.0' );
+define( 'DOERS_AI_VERSION', '0.9.1' );
 define( 'DOERS_AI_DIR', plugin_dir_path( __FILE__ ) );
 define( 'DOERS_AI_SERVER_ID', 'doers-ai' );
 
@@ -69,8 +69,8 @@ add_action( 'admin_notices', function () {
 	printf(
 		'<div class="notice notice-warning"><p><strong>Doers AI Connector:</strong> %s <a href="%s">%s</a> %s</p></div>',
 		esc_html__( 'queda un paso para terminar la configuración:', 'doers-ai' ),
-		esc_url( admin_url( 'options-general.php?page=doers-ai' ) ),
-		esc_html__( 've a Ajustes → Doers AI', 'doers-ai' ),
+		esc_url( admin_url( 'admin.php?page=doers-ai' ) ),
+		esc_html__( 've a Doers AI', 'doers-ai' ),
 		esc_html__( 'y pulsa «Instalar automáticamente» para añadir el MCP Adapter con un clic.', 'doers-ai' )
 	);
 } );

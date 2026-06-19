@@ -1,6 +1,6 @@
 # Guía — Doers AI Connector
 
-**Versión del plugin: 0.9.0**
+**Versión del plugin: 0.9.1**
 
 Plugin de WordPress que permite **crear y editar contenido desde el chat de Claude**, reutilizando los **bloques que ya existen** en la web. Está pensado para **webs ya hechas** (vuestras o de cliente): se instala el plugin y, sin entrar al wp-admin, el cliente o el equipo pueden pedir desde un chat cosas como "créame una página de servicios con el bloque hero y el de pasos" o "publica un post en la sección de noticias".
 
